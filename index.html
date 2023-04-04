@@ -7,105 +7,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5b31b49c9.js" crossorigin="anonymous"></script>
     <title>Index | Virgiawan Sanria</title>
-    <style>
-        * {
-            text-decoration: none;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: unset;
-        }
-
-        .img-profile {
-            width: 250px;
-            height: 250px;
-            overflow: hidden;
-            border-radius: 100%;
-        }
-
-        .card {
-            min-width: 200px;
-            min-height: 150px;
-        }
-
-        .img-card {
-            max-width: 300px;
-            max-height: 150px;
-        }
-    </style>
 </head>
 
 <body class="bg-dark">
-    <div class="wrapper w-100 px-5 mb-5">
-        <nav class="py-3">
+    <div class="wrapper w-100 px-5">
+        <nav class="py-3 px-5 position-absolute start-0 w-100" style="z-index: 999;">
             <div class="d-flex justify-content-between">
                 <div>
                     <h1>PEMROGRAMAN BERBASIS WEB</h1>
                 </div>
+                <div class="menu h-100 d-flex my-auto gap-5" style="font-size: large;">
+                    <a href="#home">Home</a>
+                    <a href="#praktikum">Praktikum</a>
+                    <a href="#about">About</a>
+                    <!-- <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox"><i class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></label> -->
+                </div>
             </div>
             <hr>
         </nav>
-        <header class="profile d-flex flex-column align-items-center gap-5 py-5">
-            <div class="img-profile">
-                <img src="assets/img/Virgiawan Sanria_Teknik Informatika.JPG" alt="" class="img-fluid">
-            </div>
-            <div class="text-center" style="font-size: larger;">
-                Semester 4 Kelas B Informatika
-                <h1>Virgiawan Sanria</h1>
-                <h4>2110631170040</h4>
-                <br>
-                <a href="https://github.com/virgiawansanriaa/PBWSemester4.git">
-                    <button class="btn btn-primary">Open Repository</button>
-                </a>
+        <header class="profile py-5 vh-100 d-flex" id="#home">
+            <div class="d-flex flex-column align-items-center gap-5 m-auto">
+                <div class="img-profile">
+                    <img src="assets/img/Virgiawan Sanria_Teknik Informatika.JPG" alt="" class="img-fluid">
+                </div>
+                <div class="text-center" style="font-size: larger;">
+                    Semester 4 Kelas B Informatika
+                    <h1>Virgiawan Sanria</h1>
+                    <h4>2110631170040</h4>
+                    <br>
+                    <a href="https://github.com/virgiawansanriaa/PBWSemester4.git">
+                        <button class="btn btn-primary">Open Repository</button>
+                    </a>
+                </div>
             </div>
         </header>
         <hr>
-        <div class="content mx-5 w-100">
-            <div class="mb-3">
-                <h3>Praktikum 2</h3>
+        <main class="d-flex flex-column gap-5 my-5" id="praktikum">
+            <div class="content w-100">
+                <div class="mb-3">
+                    <h3>Praktikum 1</h3>
+                </div>
+                <div class="kontent d-flex gap-3">
+                    <a href="Praktikum1/Praktikum1.html">
+                        <div class="card text-dark">
+                            <div class="img-card" style="overflow: hidden;">
+                                <img src="assets/img/Pengenalan.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="m-3">
+                                <h5 class="text-dark">Praktikum1 : Pengenalan</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
-            <div class="d-flex gap-3 flex-wrap">
-                <a href="Praktikum2/src/form.html">
-                    <div class="card text-dark">
-                        <div class="img-card" style="overflow: hidden;">
-                            <img src="assets/img/form.png" class="img-fluid" alt="">
+            <div class="content w-100">
+                <div class="mb-3">
+                    <h3>Praktikum 2</h3>
+                </div>
+                <div class="kontent d-flex gap-3">
+                    <a href="Praktikum2/src/form.html">
+                        <div class="card text-dark">
+                            <div class="img-card" style="overflow: hidden;">
+                                <img src="assets/img/form.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="m-3">
+                                <h5 class="text-dark">Latihan 1 : Form</h5>
+                            </div>
                         </div>
-                        <div class="m-3">
-                            <h5 class="text-dark">Praktikum2 : Form</h5>
+                    </a>
+                    <a href="Praktikum2/src/img.html">
+                        <div class="card text-dark">
+                            <div class="img-card" style="overflow: hidden;">
+                                <img src="assets/img/layoutimg.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="m-3">
+                                <h5 class="text-dark">Latihan 2 : Layout</h5>
+                            </div>
                         </div>
-                    </div>
-                </a>
-                <a href="Praktikum2/src/img.html">
-                    <div class="card text-dark">
-                        <div class="img-card" style="overflow: hidden;">
-                            <img src="assets/img/layoutimg.png" class="img-fluid" alt="">
+                    </a>
+                    <a href="Praktikum2/src/tabel.html">
+                        <div class="card text-dark">
+                            <div class="img-card" style="overflow: hidden;">
+                                <img src="assets/img/table.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="m-3">
+                                <h5 class="text-dark">Latihan 3 : Tabel</h5>
+                            </div>
                         </div>
-                        <div class="m-3">
-                            <h5 class="text-dark">Praktikum2 : Layout</h5>
-                        </div>
-                    </div>
-                </a>
-                <a href="Praktikum2/src/tabel.html">
-                    <div class="card text-dark">
-                        <div class="img-card" style="overflow: hidden;">
-                            <img src="assets/img/table.png" class="img-fluid" alt="">
-                        </div>
-                        <div class="m-3">
-                            <h5 class="text-dark">Praktikum2 : Tabel</h5>
-                        </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
+        </main>
+        <footer id="about">
+            <hr>
+            <div class="d-flex gap-5 justify-content-between flex-wrap">
+                <div class="abouts d-flex flex-column gap-4">
+                    <div>
+                        <h3>About</h3>
+                        <p>
+                            Website ini digunakan untuk mengumpulkan Tugas
+                            dari matakuliah Semester 4 Pemrograman Berbasis web
+                            yang dibimbing oleh Pak Dadang yusup M.kom dan dibantu oleh
+                            Kak Irfan Maulana selaku Asisten Laboratorium
+                        </p>
+                    </div>
+                    <div class="d-flex">
+                        <div>
+                            <img src="assets/img/unsika.png" alt="" style="width: 100px; height:auto;">
+                        </div>
+                        <div class="my-auto mx-3">
+                            <h1>Universitas Singaperbangsa Karawang</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h3>Social Media</h3>
+                    <div class="d-flex gap-4 justify-content-center">
+                        <a href="#"><i class="fa-brands fa-linkedin fa-2xl" style="color:#0d6efd;"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook fa-2xl" style="color: #0d6efd;"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #00ff55;"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord fa-2xl" style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Tugas</h3>
+                    <div class="d-flex flex-column gap-3">
+                        <div>
+                            <h5>Praktikum 1</h5>
+                            <ul class="nav d-flex flex-column mx-4">
+                                <li class="nav-item"><a href="Praktikum1/Praktikum1.html">Praktikum 1 : Pendahuluan</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>Praktikum 2</h5>
+                            <ul class="nav d-flex flex-column mx-4">
+                                <li class="nav-item"><a href="Praktikum2/src/form.html">Latihan 1 : Form</a></li>
+                                <li class="nav-item"><a href="Praktikum2/src/img.html">Latihan 2 : Layout</a></li>
+                                <li class="nav-item"><a href="Praktikum2/src/tabel.html">Latihan 3 : Tabel</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-
-
-        </div>
-
+            </div>
+            <div class="mt-5 mb-3 text-center">
+                @Copyright 2023
+            </div>
+        </footer>
     </div>
 
 </body>

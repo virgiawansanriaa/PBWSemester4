@@ -1,0 +1,55 @@
+* {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+a:hover{
+    color:#0d6efd;
+}
+.icon{
+    display: none;
+}   
+.img-profile {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.kontent {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.kontent a {
+    display: inline-block;
+
+}
+
+.card {
+    min-width: 200px;
+    min-height: 150px;
+}
+
+.img-card {
+    width: 300px;
+    height: 150px;
+}
+.abouts{
+    width: 50%;
+}
+
+@media(max-width:600px) {
+    .abouts{
+        width: 100%;
+    }  
+}
