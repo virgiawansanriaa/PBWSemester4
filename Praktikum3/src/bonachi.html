@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function fibonacci(x) {
+            if (x <= 1) {
+              return [0, 1].slice(0, x + 1);
+            } else {
+              var bona = fibonacci(x - 1);
+              bona.push(bona[bona.length - 1] + bona[bona.length - 2]);
+              return bona;
+            }
+          }
+          console.log(fibonacci(10)); // mencetak deret Fibonacci dari 0 hingga 10
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ini Soal 1 Javascript</h1>
+    <ol type="1">
+      <li>Klik Kanan pada halaman</li>
+      <li>Pilih Inspect</li>
+      <li>Pilih Console</li>
+      <li>Pada bagian Array,Klik</li>
+    </ol>
+</body>
+</html>
