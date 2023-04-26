@@ -1,130 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+    <title>Aneka Gorengan</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="../assets/js/action.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/index-style.css">
-    <title>Warteg XYZ Paling Oke</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <nav>
-            <div class="left">
-                <h3>WARTEG XYZ</h3>
-            </div>
-            <div class="right">
-                <a href="">Home</a>
-                <a href="">Menu</a>
-                <a href="">About Us</a>
-                <a href="">Contact Us</a>
-            </div>
-        </nav>
-        <header>
-            <div class="tagline">
-                <h1>PERUT SENANG</h1>
-                <h1>KANTONG AMAN</h1>
-                <a href="#booking"><button class="booktable">Book a Table</button></a>
-            </div>
-        </header>
-        <main>
-            <div class="lauk">
-                <div class="lauk-main">
-                    <h2>Beragam Lauk</h2>
-                    <p>Warteg XYZ menyediakan beragam lauk dari olahan ayam, ikan, sayur, hingga kacang - kacangan</p>
-                </div>
-                <div class="lauk-content">
-                    <div class="card">
-                        <img src="../assets/img/Ayam-goreng.jpg" alt="">
-                        <div class="card-body">
-                            <p>Ayam Goreng</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/ikan-kembung-goreng.png" alt="">
-                        <div class="card-body">
-                            <p>Ikan Kembung Goreng</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/sayur-asem.jpg" alt="">
-                        <div class="card-body">
-                            <p>Sayur Asem</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/tempe-goreng.jpg" alt="">
-                        <div class="card-body">
-                            <p>Tempe Orek</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="../assets/img/Kentang-Balado.png" alt="">
-                        <div class="card-body">
-                            <p>Kentang Balado</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="promo-harga">
-                <div class="promo-content">
-                    <img src="../assets/img/porsi-besar.png" alt="" style="height:300px;">
-                </div>
-                <div class="promo-main">
-                    <h2>Ramah Dikantong</h2>
-                    <p>Harga Mulai Rp.10.000 Sudah dapat Sepiring Porsi <strong>Besar</strong> Dengan <strong>Beragam
-                            Lauk</strong></p>
-                </div>
-            </div>
-        </main>
-        <footer id="booking">
-            <div style="display: flex;height:95%">
-                <div class="footer-main">
-                    <div class="footer-text">
-                        <h3>Ingin makan ditempat namun takut tidak kebagian tempat??</h3>
-                        <p>Warteg XYZ menyediakan Reservasi Meja untuk kamu yang ingin mengadakan acara makan bersama
-                            atau berduan dengan pasangan mu.</p>
-                    </div>
-                </div>
-                <form action="index.html" class="form-section">
-                    <div class="form-box">
-                        <div class="form-item">
-                            <label for="namaP">Nama Pemesan</label>
-                            <input type="text" id="namaP" name="namaP" placeholder="Masukan Nama" required>
-                        </div>
-                        <div class="form-item">
-                            <label for="noP">Nomor Whatsapp</label>
-                            <input type="text" id="noP" name="noP" placeholder="Masukan Nomor Whatsapp" required>
-                        </div>
-                        <div class="form-item">
-                            <label for="tglP">Tanggal Pemesanan</label>
-                            <input type="date" id="tglP" name="tglP" required>
-                        </div>
-                        <div class="form-item">
-                            <label for="jamP">Jam Pemesanan</label>
-                            <input type="time" id="jamP" name="jamP" required>
-                        </div>
-                        <div class="form-item">
-                            <label for="jumlahP">Jumlah Orang</label>
-                            <input type="number" id="jumlahP" name="jumlahP" placeholder="Masukan Jumlah Orang" required>
-                        </div>
-                        <div style="display: flex;justify-content:center;">
-                            <button type="submit" class="booktable">Book a Table</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="copyright">
-                Created by Virgiawan Sanria (2110631170040)
-            </div>
-        </footer>
+    <div class="header">
+        <h1>Gorengan.Com</h1>
     </div>
+    <div class="container">
+        <div class="list">
+            <div class="item">
+                <img src="../assets/img/Bala-bala.jpg" alt="Bala-bala">
+                <h3>Bala-bala</h3>
+                <p>Rp 50.000</p>
+                <button onclick="addToCart('Bala-bala')">Tambah ke Keranjang</button>
+            </div>
+            <div class="item">
+                <img src="../assets/img/Pisang Goreng.jpg" alt="Pisang Goreng">
+                <h3>Pisang Goreng</h3>
+                <p>Rp 40.000</p>
+                <button onclick="addToCart('Pisang Goreng')">Tambah ke Keranjang</button>
+            </div>
+            <div class="item">
+                <img src="../assets/img/Cireng.jpg" alt="Cireng">
+                <h3>Cireng isi</h3>
+                <p>Rp 60.000</p>
+                <button onclick="addToCart('Cireng')">Tambah ke Keranjang</button>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Keranjang Belanja</h2>
+            <div class="keranjang">
+                <div class="keranjang-list">
+                    <ul id="cart-items">
+                    </ul>
+                </div>
+                <div class="hasil">
+                    <h3>Total: <span id="cart-total">0</span></h3>
+                    <div>
+                        <button onclick="checkout()">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<script src="script.js"></script> -->
 </body>
+
 </html>
